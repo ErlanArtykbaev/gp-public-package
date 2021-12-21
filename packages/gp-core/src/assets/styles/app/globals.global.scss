@@ -1,0 +1,36 @@
+.float-right {
+  float: right;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+form.aui .panel {
+  margin-top: 0;
+
+  .form-group {
+    margin-left: 0;
+    margin-right: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  div.checkbox {
+    min-height: auto;
+    margin: 10px 0;
+    padding: 0;
+    position: static;
+  }
+
+  .checkbox + .checkbox {
+    margin-top: -5px;
+  }
+
+  .control-label {
+    padding-top: 0;
+  }
+}

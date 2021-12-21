@@ -1,0 +1,48 @@
+{
+  "name": "@gostgroup/gp-forms",
+  "version": "2.0.5",
+  "description": "",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "registry": "http://nexus.gost-group.com/repository/gp-npm-private/",
+    "scope": "gostgroup"
+  },
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavel Makeenko <amorphousxd@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@gostgroup/gp-api-services": "^2.0.5",
+    "@gostgroup/gp-constructor": "^2.0.5",
+    "@gostgroup/gp-core": "^2.0.5",
+    "@gostgroup/gp-data-types": "^2.0.5",
+    "@gostgroup/gp-hocs": "^2.0.1",
+    "@gostgroup/gp-nsi-utils": "^2.0.5",
+    "@gostgroup/gp-types": "^2.0.1",
+    "@gostgroup/gp-ui-components": "^2.0.5",
+    "@gostgroup/gp-utils": "^2.0.1",
+    "classnames": "^1.2.2",
+    "core-decorators": "^0.12.3",
+    "formulajs": "^1.0.8",
+    "geojson-validation": "^0.1.6",
+    "immutable": "^3.7.2",
+    "leaflet": "^0.7.7",
+    "leaflet-draw": "^0.3.2",
+    "lodash": "^4.15.0",
+    "moment": "^2.10.6",
+    "object-path": "^0.11.4",
+    "react": "^15.3.1",
+    "react-bootstrap": "0.30.6",
+    "react-controllables": "^0.6.0",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "react-select": "git+https://git@github.com/amorphousxd/react-select.git#fixed",
+    "react-selectize": "^2.1.0",
+    "recompose": "^0.20.2"
+  },
+  "devDependencies": {
+    "@gostgroup/gp-forms": "^2.0.5"
+  }
+}

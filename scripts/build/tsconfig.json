@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "jsx": "react",
+    "declaration": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "baseUrl": "../../packages",
+    "typeRoots": [
+      "../../node_modules/@types",
+      "../../packages/gp-module-gis/node_modules/@types",
+      "../../packages/gp-types/lib"
+    ],
+    "lib": [
+      "dom",
+      "es7"
+    ]
+  },
+  "include": [
+    "../../packages/gp-api/lib/**/*",
+    "../../packages/gp-app/lib/**/*",
+    "../../packages/gp-constructor/lib/**/*",
+    "../../packages/gp-core/lib/**/*",
+    "../../packages/gp-forms/lib/**/*",
+    "../../packages/gp-models/lib/**/*",
+    "../../packages/gp-modules-gis/lib/**/*",
+    "../../packages/gp-data-types/lib/**/*",
+    "../../packages/gp-hocs/lib/**/*",
+    "../../packages/gp-hocs/lib/@types",
+    "../../packages/gp-utils/lib/**/*",
+    "../../node_modules/@types",
+    "../../packages/gp-module-gis/node_modules/@types",
+    "../../packages/gp-types/lib"
+  ],
+  "exclude": [
+    "../../packages/gp-ui/**/*",
+    "../../packages/gp-ui/**/*"
+  ]
+}

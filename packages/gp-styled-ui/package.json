@@ -1,0 +1,46 @@
+{
+  "name": "@gostgroup/gp-styled-ui",
+  "version": "1.2.3",
+  "description": "gp-ui with used styled-components",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "registry": "http://nexus.gost-group.com/repository/gp-npm-private/",
+    "scope": "gostgroup"
+  },
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc --outDir ./lib --declarationDir ./lib"
+  },
+  "author": "fenbka",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-pro-regular": "^5.0.10",
+    "@fortawesome/react-fontawesome": "0.1.0-3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.2",
+    "styled-components": "^3.2.5"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.1",
+    "@storybook/addon-knobs": "^3.4.1",
+    "@storybook/addon-links": "^3.4.1",
+    "@storybook/addons": "^3.4.1",
+    "@storybook/client-logger": "^3.4.1",
+    "@storybook/react": "^3.4.1",
+    "@types/node": "^9.6.5",
+    "@types/react": "^16.3.11",
+    "@types/react-fontawesome": "^1.6.2",
+    "awesome-typescript-loader": "^4.0.1",
+    "babel-core": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "rimraf": "^2.6.2",
+    "ts-loader": "^3.5.0",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.8.1",
+    "typescript-styled-plugin": "^0.6.2"
+  }
+}

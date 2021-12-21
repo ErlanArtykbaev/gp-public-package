@@ -1,0 +1,21 @@
+.form {
+  margin: 20px 0 0 0;
+  position: relative;
+  label {
+    display: block;
+  }
+}
+
+.formHorizontal {
+  // display: table;
+  // width: 100%;
+}
+
+.formGroupHorizontal {
+  display: table;
+  width: 100%;
+  label {
+    display: table-cell;
+    width: 20%;
+  }
+}

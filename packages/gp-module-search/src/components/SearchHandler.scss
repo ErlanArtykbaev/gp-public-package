@@ -1,0 +1,50 @@
+.search {
+  height: 100%;
+  overflow-y: auto;
+
+  .search-title,
+  .search-notfound {
+    margin-top: 20px;
+  }
+
+  .search-result {
+    background-color: yellow;
+  }
+
+  :global {
+    .aui-nav-pagination {
+      margin-top: 20px;
+    }
+  }
+}
+
+.search-paginator {
+  position: absolute;
+  bottom: 10px;
+}
+
+.search-results {
+  overflow-y: auto;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  right: 20px;
+  bottom: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.searchItem {
+  margin-top: 30px;
+}
+
+.group-search-item,
+.element-search-item,
+.entry-search-item {
+  composes: searchItem;
+
+  a {
+    font-size: 22px;
+  }
+}

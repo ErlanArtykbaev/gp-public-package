@@ -1,0 +1,10 @@
+.tableForm {
+  composes: field-group from global;
+  padding-left: 0 !important;
+  :global {
+    .Ref-Select {
+      max-width: 200px;
+      width: 200px;
+    }
+  }
+}

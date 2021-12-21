@@ -1,0 +1,25 @@
+.filter {
+  margin-top: 5px;
+
+  & > div {
+    margin-right: 5px;
+    display: inline-block;
+    float: left;
+  }
+
+  :global {
+    .form-control {
+      width: auto;
+      height: 28px;
+    }
+
+    button {
+      height: 28px;
+    }
+  }
+}
+
+.select {
+  display: inline-table;
+  min-width: 200px;
+}

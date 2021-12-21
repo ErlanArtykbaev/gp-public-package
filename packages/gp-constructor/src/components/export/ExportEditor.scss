@@ -1,0 +1,18 @@
+.export_template {
+  form {
+    padding-bottom: inherit;
+
+    input,
+    textarea {
+      width: 100%;
+    }
+
+    .textarea {
+      max-width: inherit;
+    }
+  }
+}
+
+.panel {
+  margin-bottom: 0;
+}

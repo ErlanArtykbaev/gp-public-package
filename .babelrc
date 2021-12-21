@@ -1,0 +1,17 @@
+{
+  "presets": [
+    ["es2015", { "modules": false }],
+    "latest",
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    ["module-resolver", {
+      "root": "./packages",
+      "alias": {
+        "gp-core": "./packages/gp-core"
+      }
+    }]
+  ]
+}

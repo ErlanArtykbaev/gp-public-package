@@ -1,0 +1,4 @@
+---
+- hosts: dev
+  roles:
+    - nginx-config-role

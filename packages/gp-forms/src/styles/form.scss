@@ -1,0 +1,28 @@
+.form {
+
+  .block {
+    margin: 5px !important;
+    padding: 5px !important;
+    border: 1px solid #d5d5d5 !important;
+    border-radius: 5px;
+  }
+
+  &__list {
+    @extend .block;
+  }
+
+  &__sub {
+    @extend .block;
+  }
+
+  &__error {
+    clear: both;
+    color: #d04437;
+    display: block;
+    margin: 5px 0 0 0;
+  }
+}
+
+.gost-nsi-form {
+  padding-bottom: 60px;
+}

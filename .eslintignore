@@ -1,0 +1,6 @@
+src/bg/vendor
+src/core/vendor
+src/assets
+src/core/dep
+webpack
+server.js

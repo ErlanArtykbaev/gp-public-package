@@ -1,0 +1,21 @@
+{
+  "name": "@gostgroup/gp-api",
+  "version": "2.0.5",
+  "description": "",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "registry": "http://nexus.gost-group.com/repository/gp-npm-private/",
+    "scope": "gostgroup"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavel Makeenko <amorphousxd@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@gostgroup/gp-utils": "^2.0.1",
+    "isomorphic-fetch": "^2.1.1",
+    "lodash": "^4.15.0",
+    "url-join": "^1.1.0"
+  }
+}

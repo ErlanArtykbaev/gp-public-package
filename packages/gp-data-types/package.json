@@ -1,0 +1,23 @@
+{
+  "name": "@gostgroup/gp-data-types",
+  "version": "2.0.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.gost-group.com/repository/gp-npm-private/",
+    "scope": "gostgroup"
+  },
+  "author": "Pavel Makeenko <amorphousxd@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@gostgroup/gp-api-services": "^2.0.5",
+    "@gostgroup/gp-hocs": "^2.0.1",
+    "@gostgroup/gp-ui-components": "^2.0.5",
+    "core-decorators": "^0.12.3",
+    "lodash": "^4.15.0",
+    "react": "^15.3.1"
+  }
+}

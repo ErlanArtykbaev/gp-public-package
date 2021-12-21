@@ -1,0 +1,186 @@
+table.aui {
+  width: auto;
+}
+
+.record-table {
+  &__header > th {
+    text-align: center !important;
+    padding: 0 10px !important;
+    max-width: 200px;
+
+    &:not(:first-child) {
+      border-left: 1px solid #bbb;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid #bbb;
+    }
+
+    & > div {
+      display: none;
+    }
+  }
+
+  td:not(:first-child) {
+    border-left: 1px solid #ccc;
+  }
+
+  &__editor {
+    background-color: white;
+    height: 100%;
+    overflow: visible;
+    padding: 6px 4px;
+
+    &.disabled {
+      background-color: #ddd;
+    }
+
+    .info {
+      clear: both;
+      border-top: 1px solid #ddd;
+      color: #888;
+    }
+
+    input {
+      padding: 0 10px;
+      width: 100%;
+      border: none;
+      min-height: 100%;
+    }
+
+    input[type='checkbox'] {
+      margin: 0;
+      padding: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    & > * {
+      min-height: 100%;
+      height: 100%;
+    }
+
+    &.with-info > *:not(.info) {
+      min-height: 36px;
+      height: 36px;
+    }
+
+    textarea {
+      border: none;
+      width: 100%;
+      min-width: 100%;
+      padding: 5px 10px;
+      resize: both;
+
+      &.input-text {
+        height: 100% !important;
+      }
+    }
+
+    .aui-date-picker {
+      min-width: 90px;
+    }
+
+    .checkbox {
+      margin: 0;
+      padding: 10px 15px;
+      min-height: 2.14285714em;
+    }
+
+    .Select {
+      &.Ref-Select {
+        min-width: 100px;
+        width: 100%;
+      }
+
+      .Select-control {
+        max-width: 100%;
+        min-height: 100%;
+        height: 100%;
+        padding: 0;
+        background-color: #fff !important;
+
+        .Select-input {
+          height: 100%;
+          min-height: 100%;
+
+          input {
+            padding-left: 5px;
+          }
+        }
+      }
+
+      .Select-menu-outer {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  &__submit-wrapper {
+    margin-left: 5px;
+    margin-right: 0;
+    margin-top: 2px;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 0;
+  }
+
+  &--editable tbody {
+    background-color: #f9f9fb;
+  }
+}
+
+.records-griddle thead > tr > th,
+.records-griddle tbody > tr > td {
+  padding: 0;
+  height: 100%;
+}
+
+.table-cell {
+  // height: 100%;
+  padding: 7px 10px 8px;
+  max-width: 500px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.unavailable-row {
+  color: #999;
+
+  td,
+  a {
+    color: #999 !important;
+  }
+
+  .table-cell {
+    height: 100%;
+    color: #999;
+
+    a {
+      color: #999;
+    }
+  }
+}
+
+.table-diff {
+  &__old {
+    color: #800;
+    text-decoration: line-through;
+  }
+
+  &__new {
+    color: #080;
+  }
+
+  color: inherit;
+
+  a {
+    color: inherit;
+  }
+}

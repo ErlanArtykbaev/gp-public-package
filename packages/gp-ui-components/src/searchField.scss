@@ -1,0 +1,39 @@
+.searchField {
+  color: rgb(51, 51, 51);
+  margin: 0;
+  :global .field-group {
+    padding: 12px 0 4px 0 !important;
+  }
+
+  :global .fa-search {
+    margin-left: 13px;
+    font-size: 18px;
+  }
+}
+
+.container {
+  composes: field-group from global;
+  position: relative;
+}
+
+.input {
+  padding: 4px 5px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: inherit;
+  margin: 0;
+  // max-width: 250px;
+  vertical-align: baseline;
+  width: 100%;
+  outline: none;
+}
+
+.icon {
+  composes: fa fa-search from global;
+  color: #707070;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}

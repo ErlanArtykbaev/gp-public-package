@@ -1,0 +1,39 @@
+.classifier {
+  :global {
+    .react-selectize {
+      font-family: 'PT Sans', sans-serif !important;
+    }
+  }
+}
+
+.inlineClassifierData {
+  margin-top: 10px;
+  :global {
+    fieldset.form__sub {
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+    }
+  }
+}
+
+.classifierInput {
+}
+
+.classifierInputWithButton {
+  compose: classifierInput;
+  width: calc(100% - 50px);
+  display: inline-block;
+}
+
+.classifier_error {
+  border: 1px solid #d04437;
+}
+
+.button {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+}

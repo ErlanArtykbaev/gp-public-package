@@ -1,0 +1,161 @@
+$grey: #eaedf2;
+$light-grey: #f9f9fb;
+$black: #454449;
+$light-black: #6d6e73;
+$gost-blue: #20b2e3;
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.aui-header {
+  $bottom-border-width: 4px;
+
+  font-size: 12px;
+  background-color: $light-black;
+  border-bottom: $bottom-border-width solid $black !important;
+  color: white;
+
+  .aui-nav {
+    li.aui-nav-selected {
+      margin-bottom: -$bottom-border-width !important;
+      border-bottom: $bottom-border-width solid $gost-blue;
+    }
+
+    li {
+      a {
+        text-transform: uppercase;
+        padding: 18px 10px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .aui-header-logo-device {
+    color: white;
+  }
+}
+
+.search-button {
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.exit-button {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.tree-title {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.gost-tree-node {
+  line-height: 20px;
+  padding: 7px 20px;
+  border-bottom: 1px solid white !important;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  &:hover,
+  &.gost-tree-node-selected {
+    background-color: #fff;
+  }
+
+  .gost-favourite-icon-empty {
+    display: none;
+  }
+}
+
+.gost-tree-node-item {
+  margin-left: 0;
+  padding: 7px 0;
+}
+
+.tablesorter {
+  $border-grey: #f4f4f6;
+
+  width: 100% !important;
+
+  thead {
+    background-color: $grey;
+  }
+
+  tbody:nth-child(even) {
+    background-color: $light-grey;
+  }
+
+  td,
+  th {
+    border: 2px solid $border-grey !important;
+    font-weight: normal;
+    padding: 7px 10px;
+    position: relative;
+  }
+
+  a {
+    color: #000;
+  }
+}
+
+.sh-btn {
+  background-color: $grey;
+  border-radius: 0;
+  border: none;
+
+  &:hover {
+    background-color: #e6e6e6;
+  }
+}
+
+$toolbar-button-height: 40px;
+
+.hide-service-information {
+  margin-top: -29px !important;
+  margin-right: 10px;
+  font-size: 15px;
+  height: $toolbar-button-height;
+}
+
+.select-filter-container {
+  width: 230px;
+  display: inline-block;
+  margin-left: 15px;
+
+  .Select {
+    $border-bottom-size: 2px;
+
+    font-size: 15px;
+
+    &.has-value {
+      border-bottom: $border-bottom-size solid $gost-blue;
+    }
+
+    .Select-control {
+      height: $toolbar-button-height - $border-bottom-size;
+    }
+  }
+}
+
+.sahalin-field {
+  .icon-required {
+    left: auto !important;
+  }
+
+  .control-label {
+    text-align: left;
+  }
+}
+
+.new-group-modal-hr {
+  border-top: 1px solid #000;
+}

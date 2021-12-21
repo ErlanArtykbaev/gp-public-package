@@ -1,0 +1,57 @@
+@mixin list-wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 50%;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+
+.notAllowed {
+  select {
+    cursor: not-allowed;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+  
+  .listWrapper {
+    @include list-wrapper;
+
+    .listLoaderWrapper {
+      @include list-wrapper;
+      position: relative;
+
+      select {
+        flex-grow: 1;
+        overflow-x: scroll;
+  
+        option {
+          padding: 5px;
+        }
+      }
+    }
+
+
+    .listHeader {
+      margin-bottom: 5px;
+    }
+  }
+
+  .listControls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+
+    button {
+      width: 50px;
+    }
+
+    button:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

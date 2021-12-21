@@ -1,0 +1,11 @@
+version: '3'
+services: 
+   nginx:
+     image: nginx-bg-frontend:1.0
+     restart: always
+     volumes:
+        - ./conf.d:/etc/nginx/conf.d
+     ports:
+        - "8091:8091"
+
+     

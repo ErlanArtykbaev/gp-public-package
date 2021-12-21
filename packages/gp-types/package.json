@@ -1,0 +1,15 @@
+{
+  "name": "@gostgroup/gp-types",
+  "version": "2.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.gost-group.com/repository/gp-npm-private/",
+    "scope": "gostgroup"
+  },
+  "author": "Pavel Makeenko <amorphousxd@gmail.com>",
+  "license": "ISC"
+}

@@ -1,0 +1,13 @@
+server {
+	listen *:{{ front_nginx_bind_port }};
+	server_name _;
+        root /usr/share/nginx/html;
+        index index.html;
+
+        access_log /var/log/nginx/front_access.log;
+        error_log /var/log/nginx/front_error.log;
+
+        location / {
+            try_files $uri $uri/ /index.html;
+        }
+}

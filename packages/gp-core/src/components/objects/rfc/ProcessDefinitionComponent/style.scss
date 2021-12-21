@@ -1,0 +1,16 @@
+.processRadio {
+  margin-bottom: 10px;
+}
+
+.vRadio {
+  display: inline-block;
+  width: 100%;
+  padding: 0px 20px 0 0 !important;
+  &.disabled {
+    color: #c3c3c3;
+  }
+
+  input {
+    margin-right: 10px;
+  }
+}

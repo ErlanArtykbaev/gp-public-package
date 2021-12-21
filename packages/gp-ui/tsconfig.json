@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "sourceMap": true,
+    "strict": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "newLine": "LF",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "baseUrl": "./",
+    "paths": {
+      "src": ["src"]
+    },
+    "lib": [
+      "es2015",
+      "dom",
+      "esnext.asynciterable"
+    ],
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

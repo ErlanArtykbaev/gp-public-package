@@ -1,0 +1,87 @@
+$invalidColor: #d04437;
+
+.invalid {
+  border-color: $invalidColor !important;
+}
+
+.input {
+  &--invalid {
+    border-color: $invalidColor !important;
+  }
+
+  &--text:not(textarea) {
+    height: auto !important;
+    min-height: 2.14285714em;
+    word-wrap: break-word;
+  }
+
+  &--textarea {
+    height: auto !important;
+    min-height: 2.14285714em;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}
+
+.Select-control {
+  max-width: 250px;
+  padding: 4px 5px;
+}
+
+.Select-placeholder {
+  padding: 4px 5px;
+  top: 50%;
+  margin-top: -14px;
+}
+
+.Select-clear {
+  top: 50%;
+  margin-top: -14px;
+}
+
+.Select-arrow {
+  top: 50%;
+  margin-top: -3px;
+}
+
+.Select-menu-outer {
+  max-width: 250px;
+}
+
+.Select-option {
+  padding: 4px 5px;
+}
+
+.field-group--error {
+  .Select-control {
+    border-color: $invalidColor !important;
+  }
+}
+
+.file-input {
+  overflow: hidden;
+  position: relative;
+
+  &--invalid {
+    border-color: $invalidColor !important;
+  }
+
+  &__txt {
+    z-index: 1;
+    position: relative;
+  }
+
+  &__input {
+    top: -10px;
+    right: -40px;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    font-size: 50px;
+  }
+}
+
+.information-text {
+  padding: 5px 0;
+}

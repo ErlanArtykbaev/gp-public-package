@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "tags": ["(styled.div)", "styled", "css", "sty", "div", "extend"]
+      }
+    ],
+    "allowJs": false,
+    "target": "es2015",
+    "lib": [
+      "es5",
+      "es2015.iterable",
+      "es2015.collection",
+      "es2015.symbol.wellknown",
+      "es2015.promise",
+      "es2015.symbol",
+      "es2015.generator",
+      "dom.iterable",
+      "dom",
+      "scripthost"
+    ],
+    "module": "esnext",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "declarationDir": "../lib",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "noLib": false,
+    "jsx": "react",
+    "sourceMap": false,
+    "outDir": "../lib",
+    "rootDir": "./",
+    "baseUrl": "../",
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node"]
+  },
+  "include": ["./**/*.ts", "./**/*.tsx"],
+  "exclude": ["node_modules", "**/_draft/*", "./**/stories.tsx"],
+  "compileOnSave": true
+}

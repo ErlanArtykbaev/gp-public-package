@@ -1,0 +1,925 @@
+.capitalize {
+  text-transform: capitalize;
+}
+
+.gis-tek-logo {
+  padding: 0 !important;
+  margin-right: 10px;
+}
+
+.gost-tree-icon {
+  margin-right: 5px;
+  width: 10px;
+  cursor: pointer;
+}
+
+.aui-page-panel-nav {
+  width: 340px;
+}
+
+.geojson-glyph-remove {
+  position: absolute;
+  top: initial;
+  left: 120px;
+  margin-top: 8px;
+  cursor: pointer;
+  color: #666;
+}
+
+.style-group {
+  button {
+    display: block;
+    margin: 5px 0 !important;
+    width: 100%;
+    text-align: left;
+  }
+
+  .lg {
+    display: block;
+    margin: 5px 0 !important;
+    text-align: right;
+    width: 100%;
+    height: 30px;
+    padding: 4px 10px;
+  }
+
+  .inpt {
+    height: 30px;
+    width: 88%;
+    float: right;
+    margin-bottom: 0 !important;
+  }
+
+  .sm {
+    display: block;
+    height: 30px;
+    float: left;
+    width: 10%;
+    margin-bottom: 0 !important;
+    text-align: right;
+    padding: 4px;
+    padding-left: 0;
+  }
+
+  .box {
+    width: 95px;
+    height: 95px;
+    border-radius: 47.5px;
+    display: block;
+    margin: 5px;
+    margin-left: 10px;
+    border: solid;
+  }
+}
+
+.col-list:not(th) {
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:hover {
+    color: #999;
+  }
+}
+
+.gost-tree-node {
+  line-height: 20px;
+  padding: 7px 20px;
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #ddd;
+  }
+
+  .gost-favourite-icon-empty {
+    display: none;
+  }
+}
+
+.gost-tree-node-group {
+  font-weight: bold;
+  word-break: break-word;
+}
+
+.gost-tree-node-item {
+  margin-left: 20px;
+}
+
+.gost-favourite-icon {
+  margin-left: 5px;
+  color: #ffdc00;
+  cursor: pointer;
+}
+
+.gost-favourite-icon-empty {
+  color: #999;
+}
+
+.ReactModal__Content {
+  position: relative !important;
+  top: 60px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 5px;
+  outline: none;
+  width: 940px;
+  max-width: 100%;
+  text-align: left;
+  padding: 0 !important;
+
+  &--after-open {
+    border-radius: 0 !important;
+    border: none !important;
+  }
+}
+
+.ReactModal__Overlay {
+  -webkit-perspective: 600;
+  perspective: 600;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 10;
+}
+
+.ReactModal__Overlay--after-open {
+  background-color: rgba(128, 128, 128, 0.85) !important;
+  opacity: 1;
+  transition: opacity 150ms ease-out;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+/* editor */
+
+.type-list-item {
+  cursor: pointer;
+  height: 40px;
+}
+
+.type-list-item-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+  float: left;
+}
+
+.panel {
+  margin-top: 10px;
+}
+
+.panel-heading {
+  position: relative;
+
+  .glyphicon {
+    color: rgba(#bbb, 0.8);
+    text-shadow: 0 1px rgba(#fff, 1);
+  }
+
+  .glyphicon:hover {
+    color: #286090;
+    text-shadow: 0 1px rgba(#fff, 1);
+  }
+}
+
+/**
+ * React Select
+ * ============
+ * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
+ * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
+ * MIT License: https://github.com/keystonejs/react-select
+*/
+.Select {
+  position: relative;
+}
+
+.Select-control {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-color: #d9d9d9 #ccc #b3b3b3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  padding: 8px 52px 8px 10px;
+  transition: all 200ms ease;
+}
+
+.Select-control:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.is-searchable.is-open > .Select-control {
+  cursor: text;
+}
+
+.is-open > .Select-control {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: white;
+  border-color: #b3b3b3 #ccc #d9d9d9;
+}
+
+.is-open > .Select-control > .Select-arrow {
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px;
+}
+
+.is-searchable.is-focused:not(.is-open) > .Select-control {
+  cursor: text;
+}
+
+.is-focused:not(.is-open) > .Select-control {
+  border-color: #08c #0099e6 #0099e6;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px -1px rgba(0, 136, 204, 0.5);
+}
+
+.Select-placeholder {
+  color: #aaa;
+  padding: 8px 52px 8px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -15px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.has-value > .Select-control > .Select-placeholder {
+  color: #333;
+}
+
+.Select-input > input {
+  cursor: default;
+  background: none transparent;
+  border: 0 none;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+}
+
+.is-focused .Select-input > input {
+  cursor: text;
+}
+
+.Select-control:not(.is-searchable) > .Select-input {
+  outline: none;
+}
+
+.Select-loading {
+  -webkit-animation: spin 400ms infinite linear;
+  -o-animation: spin 400ms infinite linear;
+  animation: spin 400ms infinite linear;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-right-color: #333;
+  display: inline-block;
+  margin-top: -8px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+}
+
+.has-value > .Select-control > .Select-loading {
+  right: 46px;
+}
+
+.Select-clear {
+  color: #999;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  padding: 6px 10px;
+  position: absolute;
+  right: 17px;
+  top: 0;
+}
+
+.Select-clear:hover {
+  color: #c0392b;
+}
+
+.Select-clear > span {
+  font-size: 1.1em;
+}
+
+.Select-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  content: " ";
+  display: block;
+  height: 0;
+  margin-top: -ceil(2.5px);
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  width: 0;
+}
+
+.Select-menu-outer {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top-color: #e6e6e6;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Select-menu {
+  max-height: 198px;
+  overflow-y: auto;
+}
+
+.Select-option {
+  box-sizing: border-box;
+  color: #666;
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+}
+
+.Select-option:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.Select-option.is-focused {
+  background-color: #f2f9fc;
+  color: #333;
+}
+
+.Select-noresults {
+  box-sizing: border-box;
+  color: #999;
+  cursor: default;
+  display: block;
+  padding: 8px 10px;
+}
+
+.Select.is-multi .Select-control {
+  padding: 2px 52px 2px 3px;
+}
+
+.Select.is-multi .Select-input {
+  vertical-align: middle;
+  border: 1px solid transparent;
+  margin: 2px;
+  padding: 3px 0;
+}
+
+.Select-item {
+  background-color: #f2f9fc;
+  border-radius: 2px;
+  border: 1px solid #c9e6f2;
+  color: #08c;
+  display: inline-block;
+  font-size: 1em;
+  margin: 2px;
+}
+
+.Select-item-icon,
+.Select-item-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Select-item-label {
+  cursor: default;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  padding: 3px 5px;
+}
+
+.Select-item-label .Select-item-label__a {
+  color: #08c;
+  cursor: pointer;
+}
+
+.Select-item-icon {
+  cursor: pointer;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-right: 1px solid #c9e6f2;
+  padding: 2px 5px 4px;
+}
+
+.Select-item-icon:hover,
+.Select-item-icon:focus {
+  background-color: #ddeff7;
+  color: #0077b3;
+}
+
+.Select-item-icon:active {
+  background-color: #c9e6f2;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+/* ********************************************* */
+
+/* Переопределения реакт-селекта */
+
+.Select-control {
+  max-width: 250px;
+  padding: 4px 5px;
+}
+
+.Select-placeholder {
+  padding: 4px 5px;
+}
+
+.Select-clear {
+  padding-top: 4px;
+  padding-bottom: 3px;
+}
+
+.Select-menu-outer {
+  max-width: 250px;
+}
+
+.Select-option {
+  padding: 4px 5px;
+}
+
+.Select-control {
+  background-color: #eaedf2 !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.Select-option.is-disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ********************** */
+
+.input--invalid {
+  border-color: #d04437 !important;
+}
+
+.input--text:not(textarea) {
+  height: auto !important;
+  min-height: 2.14285714em;
+  word-wrap: break-word;
+}
+
+.input--textarea {
+  height: auto !important;
+  min-height: 2.14285714em;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.editor__rfc {
+  margin-top: 11px;
+  position: relative;
+  display: block;
+  width: 600px;
+  height: 30px;
+}
+
+.editor-navigation {
+  margin: -21px -20px 0 -20px !important;
+  padding: 0 20px !important;
+  box-sizing: content-box;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.rfc-border-line {
+  border-top: 2px solid gray;
+}
+
+.link-hand-cursor {
+  cursor: pointer;
+}
+
+.link {
+  cursor: pointer;
+  color: rgb(53, 114, 176);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.rfc-red {
+  color: red;
+}
+
+.rfc-process-name-background {
+  background-color: #f5f5f5;
+  overflow: auto;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 12px;
+}
+
+$transitionClass: modal-editor-transition;
+
+.#{$transitionClass}-enter {
+  opacity: 0.01;
+  transform: translateY(-10px);
+  transition: all 200ms ease-in;
+}
+
+.#{$transitionClass}-enter.#{$transitionClass}-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.#{$transitionClass}-leave {
+  display: none;
+}
+
+.gost-tree-node-item-highlighted a {
+  background-color: rgb(253, 255, 0);
+}
+
+.input--readonly {
+  cursor: not-allowed;
+}
+
+.field-group--error .Select-control {
+  border-color: #d04437 !important;
+}
+
+.file-input {
+  overflow: hidden;
+  position: relative;
+}
+
+.file-input--invalid {
+  border-color: #d04437 !important;
+}
+
+.file-input__txt {
+  z-index: 1;
+  position: relative;
+}
+
+.file-input__input {
+  top: -10px;
+  right: -40px;
+  z-index: 2;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  font-size: 50px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-button {
+  padding: 10px 15px;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+.report {
+  &-menu {
+    margin: 30px 0;
+    display: block;
+
+    &-link {
+      &.active,
+      &:focus {
+        background-color: $brand-primary !important;
+        color: #fff;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.element-date-picker {
+  display: inline-block;
+  max-width: 250px;
+  vertical-align: top;
+}
+
+.aui-green {
+  color: #14892c;
+}
+
+.aui-red {
+  color: #d04437;
+}
+
+.aui-blue {
+  color: #205081;
+}
+
+.records-griddle {
+  table.aui > thead > tr > th,
+  table.aui > tbody > tr > th,
+  table.aui > thead > tr > td,
+  table.aui > tbody > tr > td,
+  table.aui > tfoot > tr > td {
+    padding: 0 10px;
+  }
+
+  table.aui {
+    th {
+      span:nth-child(2) {
+        position: absolute;
+      }
+    }
+  }
+}
+
+// TODO выпилить
+.aui-progress-indicator {
+  background: #e9e9e9;
+  border-radius: 3px;
+  height: 5px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.aui-progress-indicator-value {
+  -webkit-animation: progressSlide 1s infinite linear;
+  animation: progressSlide 1s infinite linear;
+  background: transparent;
+  background-size: 20px 5px;
+  background-image: linear-gradient(90deg, #ccc 50%, transparent 50%, transparent 100%);
+  border-radius: 3px;
+  display: block;
+  height: 5px;
+  -webkit-transform: skewX(45deg);
+  transform: skewX(45deg);
+  transition: none;
+  position: absolute;
+  width: 100%;
+}
+
+.aui-progress-indicator-value-fill {
+  display: block;
+  position: absolute;
+  height: 5px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.m-l-40 {
+  margin-left: 40px;
+}
+
+.m-l--40 {
+  margin-left: -40px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+tr.parent-row .aui-icon,
+tr.standard-row .aui-icon {
+  position: absolute;
+  left: -3px;
+  top: 10px;
+}
+
+.Ref-Select {
+  min-width: 400px;
+  float: left;
+}
+
+.Ref-Select-field {
+  float: right;
+  min-width: 300px;
+}
+
+.ref-editor .Select-control,
+.ref-editor .Select-menu-outer {
+  max-width: 100% !important;
+}
+
+.Select.is-disabled .Select-control {
+  background: #eee;
+}
+
+.error {
+  clear: both;
+  color: #d04437;
+  display: block;
+  margin: 5px 0 0;
+}
+
+.condition__selected-color {
+  margin-left: 20px;
+
+  span {
+    margin-bottom: 9px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
+.condition__property-title {
+  line-height: 1;
+  display: inline-block;
+  max-width: 200px;
+  min-width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.add-statement-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.white-row {
+  background: #fff !important;
+}
+
+.yellow-row {
+  background: #f1c40f !important;
+}
+
+.orange-row {
+  background: #e67e22 !important;
+}
+
+.sea-row {
+  background: #1abc9c !important;
+}
+
+.green-row {
+  background: #2ecc71 !important;
+}
+
+.blue-row {
+  background: #3498db !important;
+}
+
+.white-row,
+.yellow-row,
+.orange-row,
+.sea-row,
+.green-row,
+.blue-row {
+  .aui-icon {
+    display: none;
+  }
+}
+
+.form-control[readonly] {
+  background: #fff !important;
+}
+
+.timeline-rows {
+  border-top: 1px solid rgba(60, 60, 60, 0.3);
+  background-color: #fbfbfb;
+
+  div {
+    height: 21px;
+    width: 40px;
+    text-align: center;
+  }
+
+  div.first {
+    height: 28px;
+  }
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+
+a.disabledVersion {
+  color: #999 !important;
+}
+
+.text-color-error {
+  color: #a94442 !important;
+
+  a {
+    color: #a94442 !important;
+  }
+}
+
+.dependency-type {
+  text-decoration: underline;
+  color: #333;
+  cursor: pointer;
+
+  &:hover() {
+    color: #666;
+  }
+
+  &-active {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3572b0;
+  }
+}
+
+.dependency-header-select {
+  position: absolute;
+  left: 40px;
+  top: 4px;
+  width: 180px;
+  margin: 0;
+}
+
+.dependency-item-row {
+  height: 31px;
+
+  .Select {
+    display: inline-block;
+    margin: 0;
+    margin-right: 5px;
+    float: left;
+  }
+
+  .Select:nth-child(2) {
+    width: 30%;
+  }
+
+  .Select:nth-child(3) {
+    width: 20%;
+  }
+
+  .Select:nth-child(4) {
+    width: 10%;
+  }
+
+  .Select:nth-child(5) {
+    width: 20%;
+  }
+
+  .value-input {
+    width: 30%;
+    display: inline-block;
+    height: 31px !important;
+    float: left;
+  }
+}
+
+.button-group {
+  button {
+    display: inline-block;
+  }
+}

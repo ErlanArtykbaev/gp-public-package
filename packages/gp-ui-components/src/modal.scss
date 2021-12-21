@@ -1,0 +1,128 @@
+$height: 70px;
+$grey: #eaedf2;
+$light-grey: #f9f9fb;
+
+$black: #454449;
+$light-black: #6d6e73;
+
+$gost-blue: #20b2e3;
+
+.header {
+  box-sizing: border-box;
+  color: #333333;
+  font-weight: normal;
+  height: 70px;
+  padding: 0 20px;
+  width: 100%;
+  display: table;
+
+  height: $height;
+  background-color: $light-black;
+  border: none;
+  border-radius: 0;
+  padding-left: 0;
+
+  h2,
+  .aui-iconfont-close-dialog,
+  .aui-dialog2-header-close,
+  .aui-button.aui-button-link {
+    color: #f5f5f5 !important;
+  }
+
+  h2 {
+    max-width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.headerAlarm {
+  composes: header;
+  background-color: #bd0c25;
+}
+
+.headerIcon {
+  height: $height;
+  float: left;
+  background-color: $black;
+  padding: 16px 16px 0 16px;
+}
+
+.headerMain {
+  display: inline-block;
+  padding: 20px 10px 0 10px;
+}
+
+.headerClose {
+  color: #f5f5f5 !important;
+  width: 150px;
+  text-decoration: none !important;
+
+  height: 20px;
+  padding-left: 5px;
+  text-align: right;
+  vertical-align: middle;
+  line-height: 100%;
+  cursor: pointer;
+  display: table-cell;
+}
+
+.content {
+  background-color: $light-grey;
+
+  // max-height: 590px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 20px;
+  visibility: visible;
+
+  label {
+    font-weight: normal;
+  }
+
+  :global .form-control {
+    border-radius: 0 !important;
+    border: none;
+  }
+
+}
+
+.footer {
+  border-top: 1px solid #cccccc;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 51px;
+  overflow: hidden;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  background: #f5f5f5;
+  visibility: visible;
+  text-align: right;
+}
+
+.footerActions {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.warningAction {
+  background: transparent;
+  border-color: transparent;
+}
+
+.widthAdaptive {
+  display: inline-block;
+  width: auto !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  height: 100%;
+}

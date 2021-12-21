@@ -1,0 +1,7 @@
+.select {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  :global .Select-control {
+    max-width: none !important;
+  }
+}

@@ -1,0 +1,30 @@
+$grey: #eaedf2;
+
+.titled {
+  composes: dropdown-menu-btn from global;
+  background-image: none !important;
+  width: 200px !important;
+  max-width: 300px;
+  display: block;
+  position: relative;
+  height: 100%;
+  padding: 10px 10px !important;
+}
+
+.toggle {
+  background: none !important;
+  border: none !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  &:active, &:focus {
+    outline: none;
+    border: none;
+    background: none;
+  }
+}
+
+.menu {
+  background: #6d6e73;
+  border: 1px solid #454449;
+  border-radius: 0;
+}

@@ -1,0 +1,13 @@
+.checkboxWrapper {
+  position: relative;
+}
+.checkboxOverlay {
+  width: 100%;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  opacity: .3;
+  border-radius: 4px;
+}

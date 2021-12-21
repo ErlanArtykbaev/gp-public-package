@@ -1,0 +1,9 @@
+:root {
+  --error: #d92525;
+  --wait: #fff8dd;
+  --success: #2a7e2e;
+
+  --base-font-family: sans-serif;
+  --headers-font-family: serif;
+  --base-font-lineheight: 1.5em;
+}
