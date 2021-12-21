@@ -195,7 +195,9 @@ export const withFormValidatorHOC = (options: WithFormValidatorOptions = { exclu
             );
             references = availableReferences.concat(notAvailableReferences);
           }
-          references.result.map(ref => Object.assign(ref, ref.version)); // для сбалансированных иерархий
+          if (Array.isArray(references.result)) {
+            references.result.map(ref => Object.assign(ref, ref.version)); // для сбалансированных иерархий
+          }
           return {
             key,
             references,
