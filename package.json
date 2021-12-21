@@ -1,5 +1,6 @@
 {
   "name": "gp-package-public",
+  "version": "1.0.0",
   "license": "Commercial",
   "scripts": {
     "bootstrap": "lerna bootstrap",

@@ -233,7 +233,7 @@ export default Wrapped => @autobind class NsiFormHOC extends Component {
               );
               references = availableReferences.concat(notAvailableReferences);
             }
-            references.map(ref => Object.assign(ref, ref.version)); // для сбалансированных иерархий
+            references.result.map(ref => Object.assign(ref, ref.version)); // для сбалансированных иерархий
             return {
               key,
               references,
